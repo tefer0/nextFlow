@@ -1,0 +1,41 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Web-based version check ( --noweb to skip )
+Connecting to web... Problem connecting to web
+
+Writing this text to log file [ YRI.log ]
+Analysis started: Thu Jul  7 11:58:16 2022
+
+Options in effect:
+	--bfile YRI
+	--freq
+	--out YRI
+
+Reading map (extended format) from [ YRI.bim ] 
+54392 markers to be included from [ YRI.bim ]
+Reading pedigree information from [ YRI.fam ] 
+209 individuals read from [ YRI.fam ] 
+0 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+0 cases, 0 controls and 209 missing
+0 males, 0 females, and 209 of unspecified sex
+Warning, found 209 individuals with ambiguous sex codes
+These individuals will be set to missing ( or use --allow-no-sex )
+Writing list of these individuals to [ YRI.nosex ]
+Reading genotype bitfile from [ YRI.bed ] 
+Detected that binary PED file is v1.00 SNP-major mode
+Before frequency and genotyping pruning, there are 54392 SNPs
+209 founders and 0 non-founders found
+Writing allele frequencies (founders-only) to [ YRI.frq ] 
+
+Analysis finished: Thu Jul  7 11:58:17 2022
+

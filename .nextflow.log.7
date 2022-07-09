@@ -1,0 +1,97 @@
+Jul-07 11:48:37.404 [main] DEBUG nextflow.cli.Launcher - $> nextflow run plink.nf
+Jul-07 11:48:37.686 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.4
+Jul-07 11:48:37.979 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=1 from script declararion
+Jul-07 11:48:38.013 [main] INFO  nextflow.cli.CmdRun - Launching `plink.nf` [sleepy_mayer] DSL1 - revision: 0dc8dfdb32
+Jul-07 11:48:38.054 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/tefero/.nextflow/plugins; core-plugins: nf-amazon@1.7.2,nf-azure@0.13.2,nf-console@1.0.3,nf-ga4gh@1.0.3,nf-google@1.1.4,nf-sqldb@0.4.0,nf-tower@1.4.0
+Jul-07 11:48:38.057 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-07 11:48:38.102 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-07 11:48:38.105 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-07 11:48:38.117 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jul-07 11:48:38.171 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-07 11:48:38.359 [main] DEBUG nextflow.Session - Session uuid: a8467959-a52d-48b3-80e1-af513d34af6f
+Jul-07 11:48:38.359 [main] DEBUG nextflow.Session - Run name: sleepy_mayer
+Jul-07 11:48:38.369 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jul-07 11:48:38.442 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.04.4 build 5706
+  Created: 19-06-2022 20:51 UTC (23:51 EAST)
+  System: Linux 5.4.0-121-generic
+  Runtime: Groovy 3.0.10 on OpenJDK 64-Bit Server VM 1.8.0_152-release-1056-b12
+  Encoding: UTF-8 (UTF-8)
+  Process: 24658@tef [192.168.9.224]
+  CPUs: 4 - Mem: 7.6 GB (278.7 MB) - Swap: 2 GB (2 GB)
+Jul-07 11:48:38.493 [main] DEBUG nextflow.Session - Work-dir: /home/tefero/eanbit-RT22/nextFlow/work [ext2/ext3]
+Jul-07 11:48:38.494 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/tefero/eanbit-RT22/nextFlow/bin
+Jul-07 11:48:38.511 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-07 11:48:38.542 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-07 11:48:38.607 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-07 11:48:38.631 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jul-07 11:48:39.169 [main] DEBUG nextflow.Session - Session start invoked
+Jul-07 11:48:41.038 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-07 11:48:41.468 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-07 11:48:41.469 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 11:48:41.479 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-07 11:48:41.513 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jul-07 11:48:41.695 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: getFreq
+Jul-07 11:48:41.697 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jul-07 11:48:41.697 [main] DEBUG nextflow.Session - Session await
+Jul-07 11:48:42.139 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 11:48:42.149 [Task submitter] INFO  nextflow.Session - [6d/d26a7a] Submitted process > getFreq (1)
+Jul-07 11:48:42.170 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 11:48:42.171 [Task submitter] INFO  nextflow.Session - [49/eb2f4e] Submitted process > getFreq (2)
+Jul-07 11:48:42.197 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 11:48:42.201 [Task submitter] INFO  nextflow.Session - [c2/7eea06] Submitted process > getFreq (3)
+Jul-07 11:48:42.269 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: getFreq (1); status: COMPLETED; exit: 10; error: -; workDir: /home/tefero/eanbit-RT22/nextFlow/work/6d/d26a7a60c573c3694308934615f572]
+Jul-07 11:48:42.351 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'getFreq (1)'
+
+Caused by:
+  Process `getFreq (1)` terminated with an error exit status (10)
+
+Command executed:
+
+  plink --bfile YRI
+      --freq         --out YRI
+
+Command exit status:
+  10
+
+Command output:
+  PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+  (C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+  Logging to plink.log.
+  Options in effect:
+    --bfile YRI
+  
+  
+    plink <input flag(s)...> [command flag(s)...] [other flag(s)...]
+    plink --help [flag name(s)...]
+  
+  Commands include --make-bed, --recode, --flip-scan, --merge-list,
+  --write-snplist, --list-duplicate-vars, --freqx, --missing, --test-mishap,
+  --hardy, --mendel, --ibc, --impute-sex, --indep-pairphase, --r2, --show-tags,
+  --blocks, --distance, --genome, --homozyg, --make-rel, --make-grm-gz,
+  --rel-cutoff, --cluster, --pca, --neighbour, --ibs-test, --regress-distance,
+  --model, --bd, --gxe, --logistic, --dosage, --lasso, --test-missing,
+  --make-perm-pheno, --tdt, --qfam, --annotate, --clump, --gene-report,
+  --meta-analysis, --epistasis, --fast-epistasis, and --score.
+  
+  "plink --help | more" describes all functions (warning: long).
+
+Command error:
+  Warning: No output requested.  Exiting.
+
+Work dir:
+  /home/tefero/eanbit-RT22/nextFlow/work/6d/d26a7a60c573c3694308934615f572
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Jul-07 11:48:42.394 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `getFreq (1)` terminated with an error exit status (10)
+Jul-07 11:48:42.423 [main] DEBUG nextflow.Session - Session await > all process finished
+Jul-07 11:48:42.423 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-07 11:48:42.444 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (2)
+Jul-07 11:48:42.481 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill getFreq (2) -- command: kill -TERM 24833; exit: 1 
+ bash: line 0: kill: (24833) - No such process
+
+Jul-07 11:48:42.492 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: getFreq (2); status: COMPLETED; exit: 10; error: -; workDir: /home/tefero/eanbit-RT22/nextFlow/work/49/eb2f4ec337e458e494a1e1a4e46b59]
+Jul-07 11:48:42.504 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: getFreq (3); status: COMPLETED; exit: 10; error: -; workDir: /home/tefero/eanbit-RT22/nextFlow/work/c2/7eea06020c4ada098e7418d941707c]
+Jul-07 11:48:42.531 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=4; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=-1; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=76ms; cachedDuration=0ms;loadCpus=-1; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jul-07 11:48:42.619 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-07 11:48:42.685 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

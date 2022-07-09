@@ -1,0 +1,43 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Web-based version check ( --noweb to skip )
+Connecting to web... Problem connecting to web
+
+Writing this text to log file [ CEU.log ]
+Analysis started: Thu Jul  7 12:13:43 2022
+
+Options in effect:
+	--bfile CEU
+	--freq
+	--out CEU
+
+Reading map (extended format) from [ CEU.bim ] 
+52889 markers to be included from [ CEU.bim ]
+Reading pedigree information from [ CEU.fam ] 
+174 individuals read from [ CEU.fam ] 
+0 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+0 cases, 0 controls and 174 missing
+0 males, 0 females, and 174 of unspecified sex
+Warning, found 174 individuals with ambiguous sex codes
+These individuals will be set to missing ( or use --allow-no-sex )
+Writing list of these individuals to [ CEU.nosex ]
+Reading genotype bitfile from [ CEU.bed ] 
+Detected that binary PED file is v1.00 SNP-major mode
+Before frequency and genotyping pruning, there are 52889 SNPs
+174 founders and 0 non-founders found
+3 heterozygous haploid genotypes; set to missing
+Writing list of heterozygous haploid genotypes to [ CEU.hh ]
+Writing allele frequencies (founders-only) to [ CEU.frq ] 
+
+Analysis finished: Thu Jul  7 12:13:44 2022
+

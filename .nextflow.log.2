@@ -1,0 +1,50 @@
+Jul-07 11:57:12.587 [main] DEBUG nextflow.cli.Launcher - $> nextflow run plink.nf
+Jul-07 11:57:12.821 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.4
+Jul-07 11:57:13.052 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=1 from script declararion
+Jul-07 11:57:13.096 [main] INFO  nextflow.cli.CmdRun - Launching `plink.nf` [fervent_payne] DSL1 - revision: 444e7f8511
+Jul-07 11:57:13.129 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/tefero/.nextflow/plugins; core-plugins: nf-amazon@1.7.2,nf-azure@0.13.2,nf-console@1.0.3,nf-ga4gh@1.0.3,nf-google@1.1.4,nf-sqldb@0.4.0,nf-tower@1.4.0
+Jul-07 11:57:13.132 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-07 11:57:13.161 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-07 11:57:13.164 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-07 11:57:13.171 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jul-07 11:57:13.202 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-07 11:57:13.376 [main] DEBUG nextflow.Session - Session uuid: 903210a9-3923-4b7b-bab6-7e115c0f3944
+Jul-07 11:57:13.376 [main] DEBUG nextflow.Session - Run name: fervent_payne
+Jul-07 11:57:13.382 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jul-07 11:57:13.822 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.04.4 build 5706
+  Created: 19-06-2022 20:51 UTC (23:51 EAST)
+  System: Linux 5.4.0-121-generic
+  Runtime: Groovy 3.0.10 on OpenJDK 64-Bit Server VM 11.0.15+10-Ubuntu-0ubuntu0.20.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 28715@tef [192.168.9.224]
+  CPUs: 4 - Mem: 7.6 GB (252.6 MB) - Swap: 2 GB (2 GB)
+Jul-07 11:57:13.871 [main] DEBUG nextflow.Session - Work-dir: /home/tefero/eanbit-RT22/nextFlow/work [ext2/ext3]
+Jul-07 11:57:13.872 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/tefero/eanbit-RT22/nextFlow/bin
+Jul-07 11:57:13.885 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-07 11:57:13.906 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-07 11:57:13.948 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-07 11:57:13.966 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jul-07 11:57:14.231 [main] DEBUG nextflow.Session - Session start invoked
+Jul-07 11:57:15.432 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-07 11:57:15.791 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-07 11:57:15.792 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 11:57:15.802 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-07 11:57:15.813 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jul-07 11:57:15.971 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: getFreq
+Jul-07 11:57:15.973 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jul-07 11:57:15.974 [main] DEBUG nextflow.Session - Session await
+Jul-07 11:57:16.416 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 11:57:16.428 [Task submitter] INFO  nextflow.Session - [59/9e3993] Submitted process > getFreq (3)
+Jul-07 11:57:16.464 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 11:57:16.472 [Task submitter] INFO  nextflow.Session - [fe/002ab5] Submitted process > getFreq (2)
+Jul-07 11:57:16.490 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 11:57:16.499 [Task submitter] INFO  nextflow.Session - [ce/3e8832] Submitted process > getFreq (1)
+Jul-07 11:58:16.551 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: getFreq (3); status: COMPLETED; exit: 0; error: -; workDir: /home/tefero/eanbit-RT22/nextFlow/work/59/9e39934e83836c45779f37664f911e]
+Jul-07 11:58:17.216 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: getFreq (2); status: COMPLETED; exit: 0; error: -; workDir: /home/tefero/eanbit-RT22/nextFlow/work/fe/002ab5e69fb6788bb9ab75470ef435]
+Jul-07 11:58:17.349 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: getFreq (1); status: COMPLETED; exit: 0; error: -; workDir: /home/tefero/eanbit-RT22/nextFlow/work/ce/3e8832c2cc344ef6ff0e633d74b28d]
+Jul-07 11:58:17.354 [main] DEBUG nextflow.Session - Session await > all process finished
+Jul-07 11:58:17.449 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-07 11:58:17.460 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3m 1s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Jul-07 11:58:17.564 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-07 11:58:17.605 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

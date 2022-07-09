@@ -1,0 +1,4 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+3	16/831ab2	50511	getFreq (3)	FAILED	2	2022-07-06 17:19:23.711	261ms	212ms	-	-	-	-	-
+2	57/fd575a	50525	getFreq (2)	FAILED	2	2022-07-06 17:19:23.764	449ms	383ms	-	-	-	-	-
+1	46/fd1567	50501	getFreq (1)	ABORTED	-	2022-07-06 17:19:23.608	-	-	-	-	-	-	-
